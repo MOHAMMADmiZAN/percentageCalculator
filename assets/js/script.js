@@ -1,8 +1,6 @@
 let result = document.querySelector('.percentageResult')
 let firstValue = document.querySelector('#firstValue')
-
 let percent = document.querySelector('#Percentage')
-
 let submit = document.querySelector('#percentageButton')
 submit.addEventListener('click', (e) => {
     e.preventDefault()
