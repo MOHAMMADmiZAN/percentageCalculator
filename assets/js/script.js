@@ -9,8 +9,8 @@ submit.addEventListener('click', (e) => {
     } else {
         let x = Number.parseFloat(firstValue.value)
         let y = Number.parseFloat(percent.value)
-        x = x / 100
-        result.innerHTML = `${x * y}`
+        // x = x / 100
+        result.innerHTML = `${x/100*y}`
     }
 
 })
