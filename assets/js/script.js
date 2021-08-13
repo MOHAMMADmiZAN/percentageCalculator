@@ -5,7 +5,11 @@ let submit = document.querySelector('#percentageButton')
 submit.addEventListener('click', (e) => {
     e.preventDefault()
     if (firstValue.value === '' || percent.value === '') {
-        alert('input all filled')
+        swal({
+            title: " Data Field Empty ",
+            text: "Please Provide Your Valuable Data",
+            icon: "error",
+        });
     } else {
         let x = Number.parseFloat(firstValue.value)
         let y = Number.parseFloat(percent.value)
