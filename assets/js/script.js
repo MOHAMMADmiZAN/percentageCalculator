@@ -5,7 +5,7 @@ let submit = document.querySelector('#percentageButton')
 submit.addEventListener('click', (e) => {
     e.preventDefault()
     if (firstValue.value === '' || percent.value === '') {
-        toastr["warning"]("Please Provide Valuable Data   ", "Valuable Data   ")
+        toastr["warning"]("Please Provide Valuable Data ", "Valuable Data")
     } else {
         let x = Number.parseFloat(firstValue.value)
         let y = Number.parseFloat(percent.value)
